@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>文字溢出</title>
+        <style>
+            .box1 {
+                width: 150px;
+                height: 80px;
+                background-color: pink;
+                margin: 100px auto;
+                /* white-space: normal; */
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .box2 {
+                width: 150px;
+                height: 45px;
+                background-color: pink;
+                margin: 100px auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">啥也不说，此处省略一万字</div>
+        <div class="box2">
+            啥也不说，此处省略一万字，啥也不说，此处省略一万字
+        </div>
+    </body>
+</html>

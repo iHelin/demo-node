@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>土豆网</title>
+        <style>
+            .tudou {
+                position: relative;
+                width: 640px;
+                height: 320px;
+                background-color: pink;
+                margin: 30px auto;
+            }
+
+            .tudou img {
+                width: 100%;
+                height: 100%;
+            }
+            .tudou::before {
+                content: "";
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4)
+                    url(https://dummyimage.com/30x30?text=play) no-repeat center;
+            }
+            .tudou:hover::before {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tudou">
+            <img src="https://dummyimage.com/640x320?text=IMG" alt="" />
+        </div>
+    </body>
+</html>
