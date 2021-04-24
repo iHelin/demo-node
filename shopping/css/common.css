@@ -1,0 +1,12 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+}
+
+.header {
+    text-align: center;
+}
